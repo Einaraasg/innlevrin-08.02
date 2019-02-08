@@ -39,13 +39,22 @@ public class CDarkiv<delstreng> implements CDarkivADT {
             if(i==1){
   cdinfo2 =  cdinfo.nextLine();
   cdinfo3=Integer.parseInt(cdinfo2);
-  nyCd[i].setCdNr(cdinfo3)}
+  nyCd[i].setCdNr(cdinfo3);}
 else if (i==2){   cdinfo2 =  cdinfo.nextLine();
-            nyCd[i] = cdinfo2;}
-            else if(i==3)
-                else if(i==4)
-                    else if(i==5)
-                        else if(i==6)
+            nyCd[i].setArtist(cdinfo2);}
+            else if(i==3){
+                cdinfo2 =  cdinfo.nextLine();
+                nyCd[i].setNavn(cdinfo2);}
+                else if(i==4){
+                cdinfo2 =  cdinfo.nextLine();
+                nyCd[i].setAar(cdinfo2);
+            cdinfo2 =  cdinfo.nextLine();}
+                    else if(i==5){
+                cdinfo2 =  cdinfo.nextLine();
+                nyCd[i].setSjanger(cdinfo2);}
+                        else if(i==6){
+                cdinfo2 =  cdinfo.nextLine();
+                nyCd[i].setPlateselskap(cdinfo2);}
 
         return;}
 
