@@ -48,7 +48,7 @@ else if (i==2){   cdinfo2 =  cdinfo.nextLine();
                 else if(i==4){
                 cdinfo2 =  cdinfo.nextLine();
                 nyCd[i].setAar(cdinfo2);
-            cdinfo2 =  cdinfo.nextLine();}
+                }
                     else if(i==5){
                 cdinfo2 =  cdinfo.nextLine();
                 nyCd[i].setSjanger(cdinfo2);}
