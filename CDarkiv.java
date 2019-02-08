@@ -1,4 +1,3 @@
-        //CD cd3= new CD(3,"Queen","The game","2004","Rock","Emi" );
 public class CDarkiv<delstreng> implements CDarkivADT {
     private CD[] cdArray;
 
