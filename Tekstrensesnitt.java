@@ -1,7 +1,7 @@
-public class Tekstgrensesnitt {
+class Tekstgrensesnitt {
 
     // lese opplysningene om en CD fra tastatur
-    public CD lesCD(){
+    public void lesCD(){
 
 
     }

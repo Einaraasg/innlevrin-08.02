@@ -1,8 +1,12 @@
+import java.util.Scanner;
+
 public class CDarkiv<delstreng> implements CDarkivADT {
     private CD[] cdArray;
+    private CD[] nyCd;
 
-    public CDarkiv(int antallCDPlasser){
+    public CDarkiv(int antallCDPlasser, CD[] cd1){
         cdArray = new CD[antallCDPlasser];
+
     }
     public void addCDToArray(CD enCD){
         for(int i= 0; i < cdArray.length; i++){
@@ -14,23 +18,39 @@ public class CDarkiv<delstreng> implements CDarkivADT {
         System.out.println("Arkivet er fult, slett en cd først!");
     }
 
-    public void slettCD(String cdTittel){
-        for(int i = 0; i< cdArray.length; i++){
-            if(cdArray[i].getNavn()==cdTittel) {
-                cdArray[i] = null;
-                return;
-            }
-        }
-        System.out.println("Fant ingen cder med det navnet");
-    }
-
-
     public CD[] hentCdTabell() {
         return new CD[0];
     }
 
 
-    public void leggTilCd(CD nyCd) {
+    public void leggTilCd(CD[] nyCd) {
+        nyCd= new CD[6];
+        String cdinfo2;
+        int cdinfo3;
+        for(int i= 0; i < 7; i++){
+            if(i==1) System.out.println("SKriv CD nr!");
+            else if(i==2)System.out.println("Skriv ARtist navn");
+            else if(i==3)System.out.println("Skriv album navn ");
+            else if(i==4)System.out.println("Skriv utgivelses år");
+            else if(i==5)System.out.println(" Skriv album sjanger");
+            else if(i==6)System.out.println("Skriv Plateselskap");
+
+        Scanner cdinfo = new Scanner(System.in);
+            if(i==1){
+  cdinfo2 =  cdinfo.nextLine();
+  cdinfo3=Integer.parseInt(cdinfo2);
+  nyCd[i].setCdNr(cdinfo3)}
+else if (i==2){   cdinfo2 =  cdinfo.nextLine();
+            nyCd[i] = cdinfo2;}
+            else if(i==3)
+                else if(i==4)
+                    else if(i==5)
+                        else if(i==6)
+
+        return;}
+
+
+
 
     }
 

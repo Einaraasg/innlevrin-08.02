@@ -6,7 +6,7 @@ public interface CDarkivADT{
     CD[] hentCdTabell();
 
     // Legger til en ny CD
-    void leggTilCd(CD nyCd);
+    void leggTilCd(CD[] nyCd);
     // Sletter en CD hvis den fins
     void slettCd(int cdNr);
 

@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class CD {
     private int cdNr;
     private String Artist;
@@ -8,7 +10,7 @@ public class CD {
 
 
 
-    public CD(){
+    public CD(Scanner cdinfo){
 
     }
     public CD (int cdNr, String Artist, String Navn, String Aar, String Sjanger, String Plateselskap){
